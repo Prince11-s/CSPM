@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.add_prod_head{
+    margin-left: 19%;
+    padding-top: 8%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+.add_prod_head span{
+    font-size: 28px;
+    font-weight: 600;
+}
+.add_prod{
+    margin-left: 19%;
+    padding: 20px;
+    background: #15ffa1;
+    height: 100%;
+    width: 1200px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    font-weight: 600;
+    text-align: left;
+    padding: 8px;
+    padding-left: 20px;
+    
+  }
+  .section11 td input{ 
+    height: 30px;
+    width: 100%;
+  }
+  .section11 td select{
+    height: 30px;
+    width: 100%;
+  }
+  .section2 td{
+    padding-top: 2%;
+  }
+  .section22 td input{
+    height: 30px;
+  }
+  .input_prod{
+    width: 450px;
+  }
+  .input_prod input{
+    width: 100%;
+  }
+  .input_serial{
+    width: 450px;
+  }
+  .input_serial input{
+    width: 100%;
+  } 
+.input_qty ,.input_rs{
+    padding-left: 30px;
+}
+.input_qty input{
+    width: 100px;
+  }
+  .input_rs input{
+    width: 100px;
+  }
+  .input_totl input{
+    width: 100px;
+  }
+  .add td{
+    padding-left:15px;
+    padding-top: 15px;
+  }
+  .add td button{
+    height: 30px;
+    width: 60px;
+  }

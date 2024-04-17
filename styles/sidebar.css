@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Poppins" , sans-serif;
+}
+body{
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+.nav_bar{
+    width: 1286px;
+    height: 70px;
+    background:#15ffa1;
+    margin-left: 250px;
+    position:fixed ;
+    z-index: 0;
+}
+
+.sidebar{
+    margin: 0;
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    left: 0;
+    background: #15ffa1;
+}
+.sidebar .text{
+    margin: 5%;
+    padding-top: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.sidebar .text .text-a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar ul{
+    background: #15ffa1;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}.sidebar ul li{
+    position: relative;
+    line-height: 60px;
+    border-bottom: 1px solid #00b96f;
+}
+.sidebar ul li a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    transition: 0.4s;
+}
+.sidebar ul li a:hover{
+    width: 106%;
+    color: white;
+    background: rgb(43, 43, 43);
+    border-left-color: white;
+}
+.sidebar ul ul{
+    position: static;
+    display: none;
+}
+.sidebar ul .custo-show a{
+    color: black;
+}
+.sidebar ul .prod-show a{
+    color: black;
+}
+.sidebar ul .custo-show.show{
+    display: block;
+}
+.sidebar ul .prod-show.show1{
+    display: block;
+}
+.sidebar ul .invoice-show a{
+    color: black;
+}
+.sidebar ul .invoice-show.show4{
+    display: block;
+}
+.sidebar ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+.sidebar ul ul li a{
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 40px;
+}
+.sidebar ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) ;
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+.sidebar ul li a:hover span{
+    transform: translateY(-50%) rotate(-180deg);
+}
+.nav_list{
+    padding-left:0 !important ;
+}
+
+
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_bar .main-logo{
+    margin: 2%;
+}
+
+
+
+
+.nav_bar .logout{
+    padding-right: 20px;
+}
+.nav_bar .logout ul li{
+    position: relative;
+    line-height: 60px;
+}
+.nav_bar .logout ul li a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+.nav_bar .logout ul ul{
+    position: fixed;
+    display: none;
+}
+.nav_bar .logout .logo .logout-show li{
+    background-color: #15ffa1;
+    border-bottom: 1px solid #00b96f;
+    border-top: 1px solid #00b96f;
+    height: 50px;
+    padding-top: 5px;
+}
+.nav_bar .logout ul .logout-show a{
+    color: black;
+}
+.nav_bar .logout ul .logout-show.show3{
+    display: block;
+    margin-left: -50px;
+}
+
+.nav_bar .logout ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+.nav_bar .logout ul ul li a{
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 50px;
+}
+::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}

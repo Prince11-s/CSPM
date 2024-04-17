@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  margin-top: -8%;
+}
+.list_contain{
+  margin-left: 22%;
+  margin-top: 8%;
+  margin-right: 5%;
+}
+.main{
+  padding-top: 8%;
+}
+.list_contain .list {
+  height: 100px;
+  width: 100%;
+  background: #15ffa1;
+  display: flex;
+  padding-top: 35px;
+  border-radius: 20px;
+  margin-top: 2%;
+}
+.list_contain .list a {
+  text-decoration: none;
+}
+.list_contain .list a .list_name{
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  padding-top: 20px;
+  padding-left: 30px
+}
+.list_contain .list a .live_list{
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+.list_contain .list .btn button {
+  background: transparent;
+  padding-top: 4px;
+  padding-left: 15px;
+  border: none;
+  text-decoration: none;
+}
+.list_contain .list .btn .edit a i{
+  color: blue;
+}
+.list_contain .list .btn .delete a i {
+  color: red;
+}
+.list_contain .list .btn button a i{
+  font-size: 26px;
+  text-align: center;
+}
+.list_contain .list .btn .dowload a i{
+  color: black;
+}

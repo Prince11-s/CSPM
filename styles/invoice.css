@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+.heading{
+  margin-left: 25%;
+  padding-top: 7%;
+  
+}
+.heading span{
+  font-size: 28px;
+  font-weight: 600;
+}
+.invoice_nd{
+  margin-left: 51.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.invoice_nd span{
+  font-size: 18px;
+  padding-left: 15px;
+}
+.invoice_nd input{
+  width: 200px;
+  height: 35px;
+  margin-left: 2%;
+  padding-left: 7px;
+  padding-right: 7px;
+  border: 1px solid black;
+}
+.container{
+  
+  margin-left: 23% ;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.cust_contain{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #15ffa1;
+  margin-top: 1%;
+  margin-right: 2%;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 65px;
+  padding-bottom: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.cust_head{
+ display: flex;
+ flex-direction: row;
+ padding-left: 65px;
+ padding-right: 25px;
+ padding-bottom: 10px;
+ margin-top: 0;
+ align-items: center;
+}
+.cust_head h4{
+  font-size: 20px;
+}
+.cust_head a{
+  padding-left: 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.cust_info{
+  display: flex;
+}
+.cust_info_left{
+  padding: 15px;
+}
+.cust_info_right{
+  padding: 15px;
+  margin-top: 5.2%;
+}
+.cust_info_left .info_content input{
+  margin: 2%;
+  height: 35px;
+  width: 450px;
+  padding-left: 15px;
+  margin-left: 10%;
+}
+.cust_info_right .info_content input{
+  margin: 2%;
+  height: 35px;
+  width: 450px;
+  padding-left: 15px;
+  margin-left: 10%;
+}
+.prod_contain{
+  margin-top: 1%;
+  margin-bottom: 3%;
+  background:#15ffa1 ;
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 30px;
+}
+
+.add_prod{
+  padding: 20px;
+  background: #15ffa1;
+  height: 100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table td ,th{
+  font-weight: 600;
+  text-align: left;
+  padding: 8px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+.table tbody tr td input{
+  height: 35px;
+  background: white;
+  border: none;
+  outline: 0;
+  padding-left: 10px;
+}
+.table tbody tr td button{
+  margin-left: 25%;
+  margin-top: 10%;
+  background: transparent;
+  outline: 0;
+  border: none;
+}
+.table tbody tr td button i{
+  font-size: 28px;
+  font-weight: 600;
+  color: red;
+  transition: 0.5s;
+}
+.table tbody tr td button i:hover{
+  color: rgb(197, 76, 76);
+}
+.section11 td input{ 
+  height: 30px;
+  width: 100%;
+}
+.section11 td select{
+  height: 30px;
+  width: 100%;
+}
+.section2 td{
+  padding-top: 2%;
+}
+.section22 td input{
+  height: 30px;
+}
+.input_prod{
+  width: 450px;
+}
+.input_prod input{
+  width: 100%;
+}
+.input_serial{
+  width: 450px;
+}
+.input_serial input{
+  width: 100%;
+} 
+.input_qty ,.input_rs{
+  padding-left: 30px;
+}
+.input_qty input{
+  width: 100px;
+}
+.input_rs input{
+  width: 100px;
+}
+.input_totl input{
+  width: 100px;
+}
+.add td{
+  padding-left:15px;
+  padding-top: 15px;
+}
+.add td button{
+  height: 30px;
+  width: 60px;
+}
+.table tbody tr td{
+  padding-left: 15px;
+
+}
+.table tbody tr .prod_name{
+  width: 320px;
+}
+.table tbody tr .descrip_cls{
+  width: 270px;
+}
+.table tbody tr .price, .qty,.total{
+  width: 80px;
+}
+.table tfoot td button{
+  height: 35px;
+  width: 100px;
+  background: rgb(31, 71, 250);
+  color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  transition: 0.2s;
+}
+.table tfoot td button:hover{
+  background-color: rgb(1, 32, 168);
+  transition: 0.2s;
+}
+.table tfoot td button:active{
+  background-color: transparent;
+  color: black;
+  border: 3px solid rgb(31, 71, 250);
+}
+.table tfoot input{
+  width: 80px;
+  height: 35px;
+  border: none;
+  margin-left: -3%;
+  padding-left: 15px;
+
+}
+.submit-div{
+  display: flex;
+  justify-content: end;
+  margin-top: 4%;
+  margin-right: 9.4%;
+}
+.save-button{
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  border: 2px solid green;
+  background-color: rgb(3, 148, 3);
+  color: white;
+  transition: 0.2s;
+}
+.save-button:hover{
+  background-color: green;
+  
+}

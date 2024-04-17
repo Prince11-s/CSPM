@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Poppins" , sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.nav_bar{
+    width: 1286px;
+    height: 70px;
+    background:#15ffa1;
+    margin-left: 250px;
+    position:fixed ;
+    z-index: 0;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 1%;
+    padding-top: 0.7%;
+    padding-left: 2%;
+}
+li{
+    list-style: none;
+    padding-right: 20px;
+}
+.logo li a i{
+    font-size: 47px;
+    font-weight: 100;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.sidebar{
+    margin: 0;
+    position: fixed;
+    width: 255px;
+    height: 100%;
+    left: 0;
+    background: #15ffa1;
+}
+.sidebar .text{
+    margin: 5%;
+    padding-top: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.sidebar ul{
+    background: #15ffa1;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}.sidebar ul li{
+    position: relative;
+    line-height: 60px;
+    border-bottom: 1px solid #00b96f;
+}
+.sidebar ul li a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+.sidebar ul li a:hover{
+    width: 106%;
+    color: white;
+    background: rgb(43, 43, 43);
+    border-left-color: white;
+}
+.sidebar ul ul{
+    position: static;
+    display: none;
+}
+.sidebar ul .custo-show a{
+    color: black;
+}
+.sidebar ul .prod-show a{
+    color: black;
+}
+.sidebar ul .custo-show.show{
+    display: block;
+}
+.sidebar ul .prod-show.show1{
+    display: block;
+}
+.sidebar ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+.sidebar ul ul li a{
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 50px;
+}
+.sidebar ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) ;
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+.sidebar ul li a:hover span{
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.show{
+    display: flex;
+}
+.show .cust_sho_contain{
+    margin-top: 5%;
+    margin-left: 20%;
+    height: 150px;
+    width: 324px;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: #15ffa1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    padding: -50px;
+}
+.show .cust_sho_contain .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.show .cust_sho_contain .content .head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 190px;
+    
+}
+.show .cust_sho_contain .content .head .head1 span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.show .cust_sho_contain .content .head .head2 h6{
+    font-size: 14px;
+    font-weight: 500;
+}
+.show .cust_sho_contain .content .cust-count-live{
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    
+}
+
+
+.show .prod_sho_contain{
+    margin-top: 5%;
+    margin-left: 3%;
+    height: 150px;
+    width: 324px;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: #15ffa1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    padding: -50px;
+}
+.show .prod_sho_contain .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.show .prod_sho_contain .content .head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+}
+.show .prod_sho_contain .content .head .head1 span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.show .prod_sho_contain .content .head .head2 h6{
+    font-size: 14px;
+    font-weight: 500;
+}
+.show .prod_sho_contain .content .prod-count-live{
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    
+}
+
+
+.show  a:hover{
+    color: white;
+    background: rgb(43, 43, 43);
+    border-left-color: white;
+}
+
+.show .pie{
+    margin-top: 5%;
+    margin-left: 6%;
+    height: 570px;
+    width: 375px;
+    background: #15ffa1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+.btom_show .chart{
+    margin-top: -24%;
+    margin-left: 20%;
+    height: 365px;
+    width: 700px;
+    background: #15ffa1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+.btom_show .pending{
+    margin-top: -11%;
+    margin-left: 71.2%;
+    height: 165px;
+    width: 375px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    background: #15ffa1;
+    border-radius: 50px;
+}
+.btom_show .pending span{
+    font-size: 34px;
+    font-weight: 500;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+}
+
+.main{
+    padding-top: 3%;
+}
+.pie-chart{
+    width: 300px; 
+    height: 300px;
+    padding: 5px;
+    border-radius: 50px;
+}
+.show .pie .pie-live-count{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 13%;
+    height: 150px;
+    background-color: #01dd85;
+    height: 222px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 95px;
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+.show .pie .pie-live-count .live-count-cham span{
+    font-size:20px ;
+    font-weight: 600;
+    padding-right: 10px;
+    padding-left: 9px;
+
+}
+.show .pie .pie-live-count .live-count-assm span{
+    font-size:20px ;
+    font-weight: 600;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+.show .pie .pie-live-count .live-count-punc span{
+    font-size:20px ;
+    font-weight: 600;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+.show .pie .pie-live-count .live-count-paint span{
+    font-size:20px ;
+    font-weight: 600;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+.show .pie .pie-live-count .live-count-cham i{
+    color: rgb(19, 19, 254);
+}
+.show .pie .pie-live-count .live-count-assm i{
+    color: red; 
+}
+.show .pie .pie-live-count .live-count-punc i{
+    color: orange;
+}
+.show .pie .pie-live-count .live-count-paint i{
+    color: green;
+}
+.show .pie .pie-live-count .live-count-cham label{
+    padding-left: 10px;
+    font-size:20px ;
+    font-weight: 600;
+}
+.show .pie .pie-live-count .live-count-assm label{
+    padding-left: 42px;
+    font-size:20px ;
+    font-weight: 600;
+}
+.show .pie .pie-live-count .live-count-punc label{
+    padding-left: 59px;
+    font-size:20px ;
+    font-weight: 600;
+}
+.show .pie .pie-live-count .live-count-paint label{
+    padding-left: 48px;
+    font-size:20px ;
+    font-weight: 600;
+}
+.btom_show .chart .bar-chart{
+    height: 365px;
+    width: 700px;
+    padding-top: 15px;
+    padding-left: 85px;
+    padding-bottom: 15px;
+}
+
